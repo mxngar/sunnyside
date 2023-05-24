@@ -6,7 +6,7 @@
 
 :root{
     --text-font: 'Barlow' , sans-serif;
-    --title-font: 'Frauces', serif;
+    --title-font: 'Fraunces', serif;
     --red: #fe7867;
     --yellow: #fad400;
     --gray: #a7abae;
@@ -71,6 +71,7 @@ header .arrow-down{
     padding: 80px 0px;
     place-items: center;
     height: 500px;
+    
 }
 
 .description__title{
@@ -87,6 +88,7 @@ header .arrow-down{
     color: var(--gray);
     text-align: center;
     line-height: 2rem;
+    padding: 0px 16px;
 
 }
 
@@ -113,3 +115,144 @@ header .arrow-down{
 .line-yellow{
     background-color: var(--yellow);
 }
+
+.line-red{
+    background-color: var(--red);
+
+}
+
+.container{
+    height: 600px;
+    background-color: tomato;
+    background-size: cover;
+
+}
+
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);]
+}
+
+.container.graphic *{
+    color: var(--graphic-text);
+
+}
+
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px;
+    height: 100%;
+    padding-bottom: 48px;
+}
+
+.container .description__title{
+    font-size: 1.5rem;
+}
+
+.container .description__text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+
+.container.photography *{
+    color: var(--photography-text);
+
+}
+
+.testimonials{
+    text-align: center;
+}
+
+.testimonials-title{
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: var(--gray);
+    padding: 32px 0;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 400px;
+
+}
+
+.client__avatar{
+    background-color: tomato;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg);
+}
+
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: .6;
+
+}
+
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+
+}
+
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding: 12px;
+}
+
+.imagens{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.imagens img{
+    width: 100%;
+} 
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    color: var(--footer);
+    height: 50vh;
+    background-color: var(--footer-bg);
+    padding: 64px 16px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
